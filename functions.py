@@ -80,9 +80,9 @@
 # def kuchbhi():
 #     pass
 # print("hello")
- 
+# TYPES OF FUNCTION ARGUMENTS
 #ARGUMENTS IN FUCNTION
-#1 REQUIRED ARGUMENT
+# 1 REQUIRED ARGUMENT(SINGLE/MULTIPLE ARGUMENT)
 # def greeting(name):  #name is parameter
 #     print("hello, " + name +"!")
 # greeting("parul")   # parul is argument
@@ -90,12 +90,35 @@
 # def intro(course_name , instructor_name):
 #     print("hi," + instructor_name + " this side," +"i will teach you," + course_name)
 # intro("python" , "parul")
-# TYPES OF FUNCTION ARGUMENTS
-# 1 REQUIRED ARGUMENT(SINGLE/MULTIPLE ARGUMENT)
-# 2 DEFAULT ARGUMENT
+
+# 2 DEFAULT ARGUMENT  = isme default value asign hoti h
+# def greeting(name="parul"):
+#     print("hello ," + name + "!")
+# greeting()
 # 3 KEYWORD ARGUMENT(NAMED ARGUMENT)
+# when calling a function you can specify arguments by parameter name
+# def divide(a,b):
+#     return a/b
+# result=divide(90,9)
+# print(result)
+
 # 4 ARBITRARY ARGUMENT(VARIABLE LENGTH ARGUMENT)
- 
+# if you are unsure how many arguments will be pased use *args to accept any number of positional argumnets
+#arguments are stored as a tuple
+# def add_numbers(*args):
+#     return sum(args)
+# result=add_numbers(5,8,8,844,78)
+# print(result)
 
+# def greetings2(*names):
+#     for name in names:
+#         print(f"hello,{name}!")
+# greetings2("parul","anushka")
 
+# def print_details(**kwargs):
+#     for key, value in kwargs.items():
+#         print(f"{key}:{value}")
+# print_details(name="parul", age=90, course="btech")     
+# 
+#    
 
