@@ -50,13 +50,7 @@
 # for ch in 'beautiful':
 #     if ch in 'aeiou':
 #         incvowels += ch
-# print(incvowels)
-
-m = "9"
-n = "10"
-print(m+n)
-
-# for ch in 'parul':
+# print(incvowels)# for ch in 'parul':
 #      print(ch)
 
 # for ch in 'beautiful':
@@ -118,8 +112,6 @@ print(m+n)
 #     if ch in 'aeiou':
 #         count = count + 1
 # print("sum of vowels in word=",count)
-    
-
 
 #for ch in 'beautiful':
 #     if ch in'aeiou':
@@ -180,14 +172,17 @@ print(m+n)
 #  print("5*",i,"=",5*i)
 
 #check if the number is prime or not
+
 # n=int(input("enter any number="))
+# count=0
 # for i in range (1,n+1):
 #  if n%i==0:
-#          count=count+1 
+#         count=count+1
     
-#  if count==2:
+# if count==2:
 #         print("prime") 
-#  else:       
+
+# else:       
 #       print("Not prime")  
 
 #sum of prime no sir method
@@ -238,3 +233,9 @@ print(m+n)
 
 # num=int(input("enter any number="))
 # for i in range()
+n=10
+x=int(input("enter your num="))
+a,b =0,1
+print(a , end=" ")
+a,b=(b,a+b)
+#fn=fn-1 + fn-2
