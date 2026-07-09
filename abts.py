@@ -1,5 +1,5 @@
-#airline booking ticket system
-#departure                              #arrival
+# airline booking ticket system
+# departure                              #arrival
 print("welcome yo hawa hawai airlines")
 print("please select your departure place ")
 print("1.delhi-DEL")
