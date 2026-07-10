@@ -119,6 +119,58 @@
 #     for key, value in kwargs.items():
 #         print(f"{key}:{value}")
 # print_details(name="parul", age=90, course="btech")     
-# 
-#    
+   
+# def series(n):
+#     for a in range(1, 11):
+#         print(n ** a)
 
+# series(5)
+
+# num1=int(input("enter your num1="))
+# num2=int(input("enter your num2="))
+
+# print("choose your operators below")
+# print("1. your opertaor is addition")
+# print("2. your opertaor is substraction")
+# print("3. your opertaor is multiplication")
+# print("4. your opertaor is division")
+# choice=int(input("enter you choice"))
+
+# if choice==1:
+#     print("Addition",num1+num2)
+# elif choice==2:
+#     print("Substarction",num1-num2)
+# elif choice==3:
+#     print("multiplication",num1*num2)
+# elif choice==4:
+#     if num2 !=0:
+#         print("division", num1/num2)
+#     else: 
+#         print("Error : cannot divisble by 0.")
+# else:
+#     print("Invalid input. please select any one 1,2,3,4")
+
+#CALCULATOR USING FUNCTIONS
+a=int(input("enter your a="))
+b=int(input("enter your b="))
+
+def addition(a,b):
+    return a+b
+def substraction(a,b):
+    return a-b
+def multiplication(a,b):
+    return a*b
+def division(a,b):
+        return a/b
+choice=int(input("enter you choice"))
+if choice==1:   
+    print(addition(a,b))
+
+elif choice==2:
+    print(substraction(a,b))
+
+elif choice==3:
+    print(multiplication(a,b))
+
+elif choice==4:
+    print(division(a,b))

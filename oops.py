@@ -26,10 +26,19 @@
 #     def __init__(self,fullname):                   print(s1.name) 
 #     self.name =fullname
 # #the self paramter is used to refrecence to the current instances of class and is used to access variable that belongs to object
-class Students():
-    name="parul"
-    def __init__(self):
-        print("adding new students")
-        
+# class Students():
+#     name="parul"
+#     def __init__(self):
+#         print(self)
+#         print("adding new students")
 
-       
+# s1=Students() 
+# print(s1)
+#student details
+student_1=['parul',10]
+student_2=['arya',90]
+print(f'{student_1[0] } is in class {student_1[1]}')
+print(f'{student_2[0] } is in class {student_2[1]}')
+#this is very long method and cant be used for many variables 
+
+ 
