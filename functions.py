@@ -153,7 +153,6 @@
 #CALCULATOR USING FUNCTIONS
 a=int(input("enter your a="))
 b=int(input("enter your b="))
-
 def addition(a,b):
     return a+b
 def substraction(a,b):
