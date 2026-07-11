@@ -172,4 +172,9 @@ elif choice==3:
     print(multiplication(a,b))
 
 elif choice==4:
-    print(division(a,b))
+    if b!=0:
+     print(division(a,b))
+    else:
+        print("cannot divisble")
+else:
+    print("you have selected wrong chocie")
