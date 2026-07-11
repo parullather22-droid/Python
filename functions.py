@@ -33,6 +33,18 @@
 #     result=a+b+c
 #     print("the sum is :",result)
 
+# def addnumber(a,b,c):
+#     if c!=0:
+#         print(a+b+c)
+#     else:
+#         print(a+b)  
+# a=int(input("enter your num1="))
+# b=int(input("enter your num2="))
+# c=int(input("enter your num3(0 if not needed)="))
+
+# addnumber(a,b,c)
+
+
 # addnumber(90,87,76)
 # function with return statement
 # def add2num(a,b):
@@ -151,30 +163,30 @@
 #     print("Invalid input. please select any one 1,2,3,4")
 
 #CALCULATOR USING FUNCTIONS
-a=int(input("enter your a="))
-b=int(input("enter your b="))
-def addition(a,b):
-    return a+b
-def substraction(a,b):
-    return a-b
-def multiplication(a,b):
-    return a*b
-def division(a,b):
-        return a/b
-choice=int(input("enter you choice"))
-if choice==1:   
-    print(addition(a,b))
+# a=int(input("enter your a="))
+# b=int(input("enter your b="))
+# def addition(a,b):
+#     return a+b
+# def substraction(a,b):
+#     return a-b
+# def multiplication(a,b):
+#     return a*b
+# def division(a,b):
+#         return a/b
+# choice=int(input("enter you choice"))
+# if choice==1:   
+# #     print(addition(a,b))
 
-elif choice==2:
-    print(substraction(a,b))
+# elif choice==2:
+#     print(substraction(a,b))
 
-elif choice==3:
-    print(multiplication(a,b))
+# elif choice==3:
+#     print(multiplication(a,b))
 
-elif choice==4:
-    if b!=0:
-     print(division(a,b))
-    else:
-        print("cannot divisble")
-else:
-    print("you have selected wrong chocie")
+# elif choice==4:
+#     if b!=0:
+#      print(division(a,b))
+#     else:
+#         print("cannot divisble")
+# else:
+#     print("you have selected wrong chocie")
