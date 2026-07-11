@@ -5,40 +5,46 @@
 #     name="parul"
 # creating object(instances)
 
-# class Student:
-#     name="parul"
-# s1=Student()
-# print(s1)
-# print(s1.name)
-# s2=Student()
-# print(s2.name)
-
-# class Car:#class
-#     colour="blue"
-#     brand="bmw"
-# car1=Car() # object
-# print(car1.colour)
-# print(car1.brand)
-
-#_ _init_ _ function = all clasees have a function called init() which is always executeed when the class is being initiated
-#creating class                                    #creating object
-# class Student:                                       s1=Student("parul")
-#     def __init__(self,fullname):                   print(s1.name) 
-#     self.name =fullname
-# #the self paramter is used to refrecence to the current instances of class and is used to access variable that belongs to object
-# class Students():
-#     name="parul"
-#     def __init__(self):
-#         print(self)
-#         print("adding new students")
-
-# s1=Students() 
-# print(s1)
 #student details
-student_1=['parul',10]
-student_2=['arya',90]
-print(f'{student_1[0] } is in class {student_1[1]}')
-print(f'{student_2[0] } is in class {student_2[1]}')
+# student_1=['parul',10]
+# student_2=['arya',90]
+# print(f'{student_1[0] } is in class {student_1[1]}')
+# print(f'{student_2[0] } is in class {student_2[1]}')
 #this is very long method and cant be used for many variables 
 
- 
+ #why oops?
+ #real world problem, code reusability ,easier maintanence, encapsulation(protect data, privacy)
+ #using oops
+ #class - blueprint or template 
+class Student:
+    def __init__(self,name,grade,percentage):  # self= class object k beech m relation k liye
+        self.name= name  
+        self.grade= grade  #attribute
+        self.percentage= percentage
+
+    def student_details(self):
+        print(f"{self.name} is in class {self.grade} with {self.percentage} percent")
+       
+
+#object- instance of class
+student1=Student('parul',10,99)
+#print(student1.name,student1.grade)
+
+student2=Student('arya' ,12,78)
+#print(student2.name,student2.grade)
+
+# print(student1.percenatage)
+# student2.student_details()
+
+#print(student1.__dict__)  # iss se key value pair ki form m print hoga
+
+#MODIFIED OBJECT PROPERTY
+
+# print(student1.percentage)
+# student1.percentage=90
+# print(student1.percentage)
+
+#DELETE OBJECT PROPERTY
+print(student1.__dict__)
+del student1.grade
+print(student1.__dict__)
