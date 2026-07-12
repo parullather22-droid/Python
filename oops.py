@@ -57,24 +57,68 @@
 # print(student1)  # ab error ayga bcz delete hogya h
 
 # 4 FEATURES OF OOPS
-#Abstraction
-#Encapsulation
-#Inheritence
-#Polymorphism
+# #Abstraction
+# #Encapsulation
+# #Inheritence
+# #Polymorphism
 
-#ABSTRACTION-hiding unneccasry details from users through class ,methods
+# #ABSTRACTION-hiding unneccasry details from users through class ,methods
+# class Student:
+#     def __init__(self,name,grade,percentage): 
+#         self.name= name      #attribute
+#         self.grade= grade  
+#         self.percentage= percentage
+
+#     def student_details(self):      #method( abstraction ) - hidden from user
+#         print(f"{self.name} is in class {self.grade} with {self.percentage+2} percent")
+
+#  #object- instance of class
+# student1=Student('parul',10,95)
+# student2=Student('arya',12,91)
+
+#student1.student_details()
+
+#ENCAPSULATION  
+#restrict action to certain attributes or methods to protect data and enforce controlled access
+
+# class Student:
+#     def __init__(self,name,grade,percentage): 
+#         self.name= name      #attribute
+#         self.grade= grade  
+#         self.__percentage= percentage #double underscore limit access
+ 
+#     def get_percentage(self):
+#         return self.__percentage
+
+#     def student_details(self):      
+#         print(f"{self.name} is in class {self.grade} with {self.percentage} percent%")
+
+#  #object- instance of class
+# student1=Student('parul',10,95)
+# student2=Student('arya',12,91)
+ 
+# print(student1.__percentage)   #error dega
+#print(student1.get_percentage())   
+
+#INHERITANCE - allows one class (child) to reuse the prp and method of another class (parent)
+#parent class
 class Student:
-    def __init__(self,name,grade,percentage,team): 
-        self.name= name  
-        self.grade= grade  
-        self.percentage= percentage
-        self.team=team
+    def __init__(self,name,grade,percentage): 
+        self.name= name      #attribute
+        self.grade= grade
 
-    def student_details(self):
-        print(f"{self.name} is in class {self.grade} with {self.percentage} percent")
+    def student_details(self):      
+        print(f"{self.name} is in class {self.grade} with {self.percentage} percent%")
+
  #object- instance of class
-student1=Student('parul',10,99,)
-student2=Student('arya',12,99)
+student1=Student('parul',10,95)
+student2=Student('arya',12,91)
 
-print(student1.percentage)
-# student1.student_details()
+#child class
+class GraduateSudent(Student):
+    def __init__(self, name, grade, percentage , stream): # parameter from parent class and new parameter from child class
+        super().__init__(name, grade, percentage) # call parent class init
+        self.stream = stream #new attribute in child class
+        
+Grad_Student1 = GraduateSudent('parul ' ,10,  89, 'pcm')
+print(Grad_Student1.stream)
