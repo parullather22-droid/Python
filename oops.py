@@ -106,9 +106,10 @@ class Student:
     def __init__(self,name,grade,percentage): 
         self.name= name      #attribute
         self.grade= grade
+        self.percentage=percentage
 
     def student_details(self):      
-        print(f"{self.name} is in class {self.grade} with {self.percentage} percent%")
+        print(f"{self.name} is in class {self.grade} with {self.percentage}%")
 
  #object- instance of class
 student1=Student('parul',10,95)
@@ -119,6 +120,11 @@ class GraduateSudent(Student):
     def __init__(self, name, grade, percentage , stream): # parameter from parent class and new parameter from child class
         super().__init__(name, grade, percentage) # call parent class init
         self.stream = stream #new attribute in child class
-        
+
+    def student_details(self):
+        super().student_details()  
+        # print(f'stream is {self.stream}')
+
 Grad_Student1 = GraduateSudent('parul ' ,10,  89, 'pcm')
-print(Grad_Student1.stream)
+#print(Grad_Student1.stream)
+Grad_Student1.student_details()
