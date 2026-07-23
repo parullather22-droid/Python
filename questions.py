@@ -341,7 +341,37 @@
 #       i=i+1
 #       print(largest)
 
-name="parul"
-lists=list(name)
-print(lists)
+# name="parul"
+# lists=list(name)
+# print(lists)
 
+class student:
+    def __init__(self,name,rollno,stream):
+        self.name=name
+        self.rollno= rollno
+        self.stream = stream
+  
+    def student(self):
+        print(f"my name is {self.name} and my roll no is {self.rollno}")
+
+    def read(self):
+        print("he reads")
+
+s1=student("parul",1,"cse")
+s1.student()
+class marks(student):
+    pass
+    print("this is marks")
+    
+
+class graduate_student(student,marks):
+   
+    def student(self):
+        
+        print(f"my name is {self.name} and my roll no is {self.rollno} and my stream is {self.stream}")
+        
+s3=graduate_student("parul",6,"cse")
+
+s3.student()
+s3 = marks()
+marks.read()
